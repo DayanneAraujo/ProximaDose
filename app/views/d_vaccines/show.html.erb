@@ -1,0 +1,20 @@
+<%= render 'header', d_vaccine: @d_vaccine %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Vaccine:</strong>
+  <%= @d_vaccine.vaccine %>
+</p>
+
+<p>
+  <strong>Date taken:</strong>
+  <%= @d_vaccine.date_taken %>
+</p>
+
+<p>
+  <strong>Retake:</strong>
+  <%= @d_vaccine.retake %>
+</p>
+
+<%= link_to 'Edit', edit_d_vaccine_path(@d_vaccine) %> |
+<%= link_to 'Back', d_vaccines_path %>

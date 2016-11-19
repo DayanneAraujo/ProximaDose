@@ -1,0 +1,18 @@
+@import "bootstrap";
+
+//= require bootstrap
+
+.img-circle {
+  width: 150px !important;
+  height: 150px !important;
+  color: pink !important;
+  border-radius: 75px !important;
+}
+
+.row {
+  padding: 100px;
+
+  div {
+    text-align: center;
+  }
+}

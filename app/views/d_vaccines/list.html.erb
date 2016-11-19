@@ -1,0 +1,30 @@
+<%= render 'header', d_vaccine: @d_vaccine %>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Vaccine</th>
+      <th>Date taken</th>
+      <th>Retake</th>
+      <th>Detail</th>
+      <th>Update</th>
+      <th>Remove</th>
+
+      <th colspan="6"></th>
+    </tr>
+  </thead>
+
+  <tbody class="row">
+    <% @d_vaccines.each do |d_vaccine| %>
+      <tr>
+        <td><%= d_vaccine.vaccine %></td>
+        <td><%= d_vaccine.date_taken %></td>
+        <td><%= d_vaccine.retake %></td>
+        <td><%= link_to 'Show', d_vaccine, class: "btn btn-primary" %></td>
+        <td><%= link_to 'Edit', edit_d_vaccine_path(d_vaccine), class: "btn btn-warning" %></td>
+        <td><%= link_to 'Destroy', d_vaccine,
+          method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to 'Home page', d_vaccines_path %>

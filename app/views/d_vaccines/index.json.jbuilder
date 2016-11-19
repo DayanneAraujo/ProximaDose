@@ -1,0 +1,1 @@
+json.array! @d_vaccines, partial: 'd_vaccines/d_vaccine', as: :d_vaccine

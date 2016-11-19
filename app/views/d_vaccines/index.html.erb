@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<%= render 'header', d_vaccine: @d_vaccine %>
+<div class="row">
+    <div class="col-lg-4">
+      <img class="img-circle" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8AAAAuLi709PT7+/tbW1vY2NgKCgpWVlZ1dXXf39/p6enw8PCUlJTU1NSnp6e6urrKysofHx98fHyRkZHDw8M4ODibm5tJSUmGhoYmJiZsbGyurq7d3d1iYmK0tLQgICAVFRU/Pz82NjZISEiJiYlQUFBoaGgYGBihoaE3VvvaAAAI7ElEQVR4nO2dbVviPBCFgRawiIBgQV5EwMXV//8HHwUehHqaTJOZZuJ6vu7VNbdCM3MyM2k0uJTmWWvbdNLb4yy/ZVuIlPKxG91Zu2E/NINRD558B72HpjDonQOw2WyH5ihVhwew2XwNTVKmP1yEzX1oFKwBG2Cz2QsNg9R5YyR8CE0DxPYlPGiThOb5pqTFStjshAb6Jpad8EJ5aKBv6jITPocGKor3W/ihWWiiolbchOp2xBk34SQ0UVF7bsJlaKKiuF+l+qJv9k+puuCbKW/60i40UVFDbsJWaKKinrkJN6GJirqHyxy3KIKPdkMTFYUJaY4LRkyFV1xVmPCO9OwOPqstfcL5PS30eoXPanNOMSEt9GpHQYhzC1rotYTPanNqnuAqb0jPTuCz2pL8HlwlLTCZR0F4C1dJC0ww4UB4xVWFCWnbNs687oVXXFUJXGWT9CzOvEbCK64sD8I7+Kg6K8qDEGdeQ+EFV9YGLpN02okzL3WniFO4TFJggn06Wkxbo3Bw+UR5dAQfVXc2g0Mv0qaWw0fn0iuuKhx6kTY1nHmpM0yx2UY6X8FReya94qrCL0TSto3jIXWE2Ioina9gQnWmN34hkpJ8TPhHesVVhV8XpI9aHz46lV5xVeHXxZryaB+erqqzhPFHjZTkJ7CIYyG94qpKtmiZY9KjMKZ902aYptDX7VJcz3QBH9VGWFLyRQm90xf4qDZLuMT1JHmCOC9RR+jhCWJbX10lLQ5MSaH3Og5CHJiuKI9m8FFttn5J2EbK1DGhNlvfJ8vzyC3rlEeGgE1vdbV7OH4mlcVg01udJZzA+JmUA2FLmPSSqlM4bFtQYi+80aizhBuPcJ2UyCQSS9hj347EEi7Z1SiOKfZ41FnCJe8LyhsRW8LqamhL/hKU9wUuAlBnepcUnFC+TbgIQJ1hWrLOv85PklysWoWDGkolrIeLVatS2D46JWz5mPBRfslVBY8Qx4Qtv7+Fvxv5FVcVPkIkJLLYTlRnCXtU/uCQdiu/4qrCNRWULR+bbeILriwcmlC2fGy2DToeupUwI/GWTwkvcVriqW7GXvyHX/qULf9GgvBDGffJAPwplArMv0KEzRaznQV/COWViBMvFq1ZP6rObQV4n2GSXwlg2u91Bvlqtp9kr4uSoR8EZ5e98+1KVS2tfm9wnz/P5sub3YLU/EvY8tn7wq5lqT1L0yS57eSj1ftk2X6cVm9KJ2z57F1T10J5WHLby5/fH+ZZe9fy7dIm5MD4RIBPxS9K//2VcwAE4egC76R8uo6rBtyvbkquzjyQoagLQyRd4RDRRy8EQv6feqWvX3IH1wx4ihADS4VtJ50NEaEvPCEHZm92v9b/hJwTdC5FiJtw4sWmE2G6Ffr/CRui2M8+6kSIXXkGUXJgsR9+0JEw8Z0lVypKGS2u/OLSjfBXgRT5Yt+bSUdCuQyGlqH1RHaqo46Ecnk2CfBDQzHGI6HYplvhPH6wusv8hF1pWcKax7DUTzivtxAWd3oeCXF9qJ+2Wd3FaSZCXFzmqJf1cDQaDeovgjUR+nol3XFrt57M74aj+164wkkTIS4XMGs7vcnm+9kBqp9oKD03EZZU/BTU2r2us/lqlA+e1FW4fspIWBK2Laav7eXk48P3CaWuurwoI6H7sYMiORBSXBZFMhPC9Gms4f1Bl5kQnjWT+nr0yEwYxzQjs8yEOH/6SYQ4blPX9mCUmRCf4mmb9WOWmRAXlGub9WOWmRAXlKtrXTHKTIjPKdW1PRhlJsSBqb6mAJPMhD6zD7XITOgz+1CLzIR4aIC6KSpGmQkjmTFilJkQl6JTKu/0yEyI/1VfU4BJLoTqRocb5UKosCnAIDNhGscUFaMshLAS6icRNuBJs7o5MUZZCGHt1Sbcch3kQqhuEo5RToRRmW0WQniOHpedaCHEhqm6KSomuRDqmxNjkhNhVIaphRDXsf4SsipN/GRpKQ5MmObr3aLrKTOh+8g1Do04GwQqET41UjdVA5TsfbIQemibPVM5RUtoz4QSrZwvtHFP7LcLXkmUkGgpS9Scfek8jwsfAnuL0ACIbT42nV1tIULC21i4ee38O5YitNvmuPCVS9tzaC1WJmz7I+KhCmz6muUjVupt6ykRLdS//AWzlpheyvYxxVMluXTh2osR2obpyL5oLqY6iBHaZgvKEl7sVmKhoW2Yjuyn9OI9J9YWbxvrLUp4OamK/WLmsyzbhWj74WVgLNdSbSmskuxWvz4dlAm9m9YNUTCzGF9/fKT6ZG1lR3I7fqv4/WC/mvkkC6HY1+PuewIulGpb+tewB9ht+2id7XFJXi4SBNtKx+DJpVSbQJov+U0vGyE8ExJshEjy/c2UdB3zd+F+aVuzM3RqSVOW6xcOT2yEeJvSeSbkNl4f5946T0zcLsLDXWU6Cd2mHsdx6fFRP58QB9G2uc5xXOt8lNsV5DERuhUa42BRZ6sH9udthca41ePnE+psZsGEtstYsH+ikxAnQrZicWwnqrtp5iC3YnEcCSklhNUQttnzOE7QSYindtkKjTGhuuvVD8LT9W2FxjgS0neXzqfw0C43QtJdu/UL+jy2rn732z8CCFouW0sZblRtc05zC3A0q++mmYOcLqSMqjEQm0oWQwKP/1HaGIirmyyE+OBC3eXjRzlduRnLbUEHOc2ewEczShsDcTGAE6G++5AOciJ0vysqgPDQY5shAR8iXYBZv3BBhy1dhw8pncKFj5FtlW0xEeLphLZULyZCt9ur4UMK7yX7FLbNbIfAMRFi28yWzMZE6HZEGhMhNpVsR6QxEeJ03ZbMwoeUzmx0uxgWuqxREdrS9ZgGVrhdfbv98YQxjeRwMyTiJ7QZEvAsQCkhTte7lnI4+JDSsSqM1bC/hIH0Sxg/IWPD6yY0C9YvYQXZ2qUCCRdjuBHqLPT+Bwi3bIRax4xt2Ag3oVFKhGcxuUhpjs/Y1a/0dI2xE1XrKHG+sE1nv0WDr8NPaUlUg23KhdIM/6A+x+t0obOv66TU/+brF7VfwpN6e7+rU/dKw5kr3T/snK6n7S7aQ/4/4H9EyI27R+wGtwAAAABJRU5ErkJggg==" alt="Generic placeholder image" height="140" width="140">
+      <h2>Add new vaccine</h2>
+      <p>Adicione informação sobre as vacinas do seu pet :).</p>
+      <p><%= link_to 'Cadastrar nova vacina', new_d_vaccine_path, class: "btn btn-warning"  %></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <img class="img-circle" src="https://cdn3.iconfinder.com/data/icons/purchases-and-sales/512/lista.png" alt="Generic placeholder image" height="140" width="140">
+      <h2>Historico de vacinas</h2>
+      <p>Veja todas as informações sobre as vacinas do seu pet :)</p>
+      <p><%= link_to 'Listar todas as vacinas', list_d_vaccines_path, class: "btn btn-warning" %></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
+      <img class="img-circle" src="http://images.mysecuritysign.com/img/lg/L/beware-of-dog-warning-label-lb-2729.png" alt="Generic placeholder image" height="140" width="140">
+      <h2>Vacinas pendentes</h2>
+      <p>Veja se tem alguma vacina para ser tomada nos próximos 3 meses :)</p>
+        <p><%= link_to 'Vacinas próximas', pending_d_vaccines_path, class: "btn btn-warning"  %></<p>
+    </div><!-- /.col-lg-4 -->
+  </div>
+<br>

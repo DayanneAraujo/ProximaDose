@@ -1,0 +1,1 @@
+json.partial! "d_vaccines/d_vaccine", d_vaccine: @d_vaccine

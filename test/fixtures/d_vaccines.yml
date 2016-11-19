@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vaccine: MyString
+  date_taken: 2016-11-19
+  retake: 2016-11-19
+
+two:
+  vaccine: MyString
+  date_taken: 2016-11-19
+  retake: 2016-11-19
